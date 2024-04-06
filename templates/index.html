@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Endpoints</title>
+</head>
+<body>
+    <h1>Test Endpoints</h1>
+    <form action="{% url 'find_employee_branch' %}" method="get">
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id">
+        <button type="submit">Find Employee Branch</button>
+    </form>
+    <br>
+    <form action="{% url 'check_optional_car' %}" method="get">
+        <label for="branch_id">Branch ID:</label>
+        <input type="text" id="branch_id" name="branch_id">
+        <button type="submit">Check Optional Car</button>
+    </form>
+</body>
+</html>
